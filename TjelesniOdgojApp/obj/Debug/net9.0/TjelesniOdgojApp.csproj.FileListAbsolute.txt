@@ -1,0 +1,14 @@
+C:\Users\mirza\OneDrive\Desktop\Cline\Edo2\TjelesniOdgojApp\bin\Debug\net9.0\TjelesniOdgojApp.exe
+C:\Users\mirza\OneDrive\Desktop\Cline\Edo2\TjelesniOdgojApp\bin\Debug\net9.0\TjelesniOdgojApp.deps.json
+C:\Users\mirza\OneDrive\Desktop\Cline\Edo2\TjelesniOdgojApp\bin\Debug\net9.0\TjelesniOdgojApp.runtimeconfig.json
+C:\Users\mirza\OneDrive\Desktop\Cline\Edo2\TjelesniOdgojApp\bin\Debug\net9.0\TjelesniOdgojApp.dll
+C:\Users\mirza\OneDrive\Desktop\Cline\Edo2\TjelesniOdgojApp\bin\Debug\net9.0\TjelesniOdgojApp.pdb
+C:\Users\mirza\OneDrive\Desktop\Cline\Edo2\TjelesniOdgojApp\obj\Debug\net9.0\TjelesniOdgojApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mirza\OneDrive\Desktop\Cline\Edo2\TjelesniOdgojApp\obj\Debug\net9.0\TjelesniOdgojApp.AssemblyInfoInputs.cache
+C:\Users\mirza\OneDrive\Desktop\Cline\Edo2\TjelesniOdgojApp\obj\Debug\net9.0\TjelesniOdgojApp.AssemblyInfo.cs
+C:\Users\mirza\OneDrive\Desktop\Cline\Edo2\TjelesniOdgojApp\obj\Debug\net9.0\TjelesniOdgojApp.csproj.CoreCompileInputs.cache
+C:\Users\mirza\OneDrive\Desktop\Cline\Edo2\TjelesniOdgojApp\obj\Debug\net9.0\TjelesniOdgojApp.dll
+C:\Users\mirza\OneDrive\Desktop\Cline\Edo2\TjelesniOdgojApp\obj\Debug\net9.0\refint\TjelesniOdgojApp.dll
+C:\Users\mirza\OneDrive\Desktop\Cline\Edo2\TjelesniOdgojApp\obj\Debug\net9.0\TjelesniOdgojApp.pdb
+C:\Users\mirza\OneDrive\Desktop\Cline\Edo2\TjelesniOdgojApp\obj\Debug\net9.0\TjelesniOdgojApp.genruntimeconfig.cache
+C:\Users\mirza\OneDrive\Desktop\Cline\Edo2\TjelesniOdgojApp\obj\Debug\net9.0\ref\TjelesniOdgojApp.dll

@@ -1,0 +1,45 @@
+@model TjelesniOdgojWebApp.Models.Student
+
+@{
+    ViewData["Title"] = "Detalji o učeniku";
+}
+
+<h2>Detalji o učeniku</h2>
+
+<div>
+    <h4>@Model.FirstName @Model.LastName</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            ID:
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Id
+        </dd>
+        <dt class="col-sm-2">
+            Ime:
+        </dt>
+        <dd class="col-sm-10">
+            @Model.FirstName
+        </dd>
+        <dt class="col-sm-2">
+            Prezime:
+        </dt>
+        <dd class="col-sm-10">
+            @Model.LastName
+        </dd>
+        <dt class="col-sm-2">
+            Razred:
+        </dt>
+        <dd class="col-sm-10">
+            @Model.ClassName
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Uredi</a>
+    <a asp-controller="Grades" asp-action="Index" asp-route-studentId="@Model.Id" class="btn btn-info">Ocjene</a>
+    <a asp-controller="Notes" asp-action="Index" asp-route-studentId="@Model.Id" class="btn btn-success">Napomene</a>
+    <a asp-controller="Reports" asp-action="StudentReport" asp-route-studentId="@Model.Id" class="btn btn-primary">Izvještaj</a>
+    <a asp-action="Index" class="btn btn-secondary">Natrag na popis</a>
+</div>

@@ -1,0 +1,25 @@
+@model TjelesniOdgojWebApp.Models.Note
+
+@{
+    ViewData["Title"] = "Dodaj napomenu";
+    var studentId = ViewBag.StudentId;
+}
+
+<h2>Dodaj napomenu</h2>
+
+<form asp-action="Create">
+    <input type="hidden" name="StudentId" value="@studentId" />
+    
+    <div class="form-group">
+        <label asp-for="Content" class="control-label"></label>
+        <textarea asp-for="Content" class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+        <label asp-for="Date" class="control-label"></label>
+        <input asp-for="Date" class="form-control" type="date" value="@DateTime.Now.ToString("yyyy-MM-dd")" />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Dodaj" class="btn btn-primary" />
+        <a asp-action="Index" asp-route-studentId="@studentId" class="btn btn-secondary">Natrag na napomene</a>
+    </div>
+</form>

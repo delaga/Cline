@@ -1,0 +1,29 @@
+@model List<TjelesniOdgojWebApp.Models.Note>
+
+@{
+    ViewData["Title"] = "Napomene učenika";
+    var studentId = ViewBag.StudentId;
+}
+
+<h2>Napomene učenika</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Datum</th>
+            <th>Napomena</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var note in Model)
+        {
+            <tr>
+                <td>@note.Date.ToShortDateString()</td>
+                <td>@note.Content</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Create" asp-route-studentId="@studentId" class="btn btn-primary">Dodaj napomenu</a>
+<a asp-controller="Students" asp-action="Details" asp-route-id="@studentId" class="btn btn-secondary">Natrag na učenika</a>

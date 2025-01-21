@@ -1,0 +1,35 @@
+@model List<TjelesniOdgojWebApp.Models.Student>
+
+@{
+    ViewData["Title"] = "Popis učenika";
+}
+
+<h2>Popis učenika</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Ime</th>
+            <th>Prezime</th>
+            <th>Razred</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model)
+        {
+            <tr>
+                <td>@student.Id</td>
+                <td>@student.FirstName</td>
+                <td>@student.LastName</td>
+                <td>@student.ClassName</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@student.Id">Detalji</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Create" class="btn btn-primary">Dodaj novog učenika</a>

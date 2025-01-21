@@ -1,0 +1,29 @@
+@model List<TjelesniOdgojWebApp.Models.Grade>
+
+@{
+    ViewData["Title"] = "Ocjene učenika";
+    var studentId = ViewBag.StudentId;
+}
+
+<h2>Ocjene učenika</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Ocjena</th>
+            <th>Datum</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var grade in Model)
+        {
+            <tr>
+                <td>@grade.Value</td>
+                <td>@grade.Date.ToShortDateString()</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Create" asp-route-studentId="@studentId" class="btn btn-primary">Dodaj ocjenu</a>
+<a asp-controller="Students" asp-action="Details" asp-route-id="@studentId" class="btn btn-secondary">Natrag na učenika</a>

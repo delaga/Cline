@@ -1,0 +1,51 @@
+@{
+    ViewData["Title"] = "Izvještaj o učeniku";
+    var student = ViewBag.Student as TjelesniOdgojWebApp.Models.Student;
+    var grades = ViewBag.Grades as List<TjelesniOdgojWebApp.Models.Grade>;
+    var notes = ViewBag.Notes as List<TjelesniOdgojWebApp.Models.Note>;
+}
+
+<h2>Izvještaj o učeniku</h2>
+
+<h3>@student.FirstName @student.LastName</h3>
+<p>Razred: @student.ClassName</p>
+
+<h4>Ocjene</h4>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Ocjena</th>
+            <th>Datum</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var grade in grades)
+        {
+            <tr>
+                <td>@grade.Value</td>
+                <td>@grade.Date.ToShortDateString()</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h4>Napomene</h4>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Datum</th>
+            <th>Napomena</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var note in notes)
+        {
+            <tr>
+                <td>@note.Date.ToShortDateString()</td>
+                <td>@note.Content</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-controller="Students" asp-action="Details" asp-route-id="@student.Id" class="btn btn-secondary">Natrag na učenika</a>
